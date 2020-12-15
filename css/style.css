@@ -135,16 +135,40 @@ header ::before {
     left: -175px;
   }
 }
-header .links img {
+header #logo {
   height: 37px;
   margin-top: 18px;
-  display: block;
+  display: flex;
   position: relative;
   left: 11px;
 }
+@media (min-width: 891px) {
+  header #logo {
+    height: unset;
+    margin-top: -3px;
+    position: absolute;
+    left: 42px;
+  }
+}
+header .links {
+  width: 1360px;
+  height: 130px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
 header .links p {
+  padding-right: 45px;
+  font-size: 20px;
   display: none;
   cursor: pointer;
+}
+@media (min-width: 891px) {
+  header .links p {
+    display: block;
+  }
 }
 header .social {
   padding-left: 25px;
@@ -153,7 +177,7 @@ header .social a {
   width: 33px;
   height: 33px;
   border: 2px solid #fff;
-  /*      display: flex;
+  /*    display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -257,6 +281,15 @@ main .right {
 }
 main .right img {
   margin-bottom: -6px;
+}
+main .right .blue-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #0051ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 350px;
+  left: -30px;
 }
 main .right .red-circle {
   width: 23px;
