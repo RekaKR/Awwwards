@@ -18,6 +18,15 @@ body {
   top: 0;
   z-index: 1;
 
+  svg {
+    width: 30px;
+    height: unset;
+
+    @media (min-width: 561px) {
+      height: 460px;
+    }
+  }
+
   p {
     width: calc(100% - 30px);
     padding-left: 15px;
@@ -57,6 +66,7 @@ header {
     position: absolute;
     top: -100px;
     left: -100px;
+    z-index: -1;
 
     @media (min-width: 740px) and (max-width: 890px) {
       width: 320px;
@@ -82,7 +92,6 @@ header {
 }
 
 main {
-
   .right {
     img {
       margin-bottom: -6px;

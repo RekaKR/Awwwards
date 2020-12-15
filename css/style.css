@@ -33,6 +33,15 @@ body {
   top: 0;
   z-index: 1;
 }
+.navbar svg {
+  width: 30px;
+  height: unset;
+}
+@media (min-width: 561px) {
+  .navbar svg {
+    height: 460px;
+  }
+}
 .navbar p {
   width: calc(100% - 30px);
   padding-left: 15px;
@@ -73,6 +82,7 @@ header ::before {
   position: absolute;
   top: -100px;
   left: -100px;
+  z-index: -1;
 }
 @media (min-width: 740px) and (max-width: 890px) {
   header ::before {
