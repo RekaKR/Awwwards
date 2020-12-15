@@ -13,7 +13,7 @@ Elkészítjük a loadgin page-et (szimultán).              -   Csaba
   <--CSABA TUDJA SZOSZI-->
 Felosztjuk a főoldalon található feladatokat            -   Attila + Réka
   <--EZ AKKOR LESZ SZÜKSÉGES, HA KÉSZ VAN A HTML ÉS A CSS-->
-  Metro animáció                                        -   Attila
+  Metro animáció                                        -   DONE
   Kéz animáció                                          -   Attila
 Reszponzitást ellenőrzünk.                              -   Attila + Réka
 Opcionális: Javítjuk a reszponzitást.                   -   Attila (+ Réka)
