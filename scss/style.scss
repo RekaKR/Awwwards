@@ -1,6 +1,27 @@
 @use 'reset';
-@use 'variables';
+@use 'variables' as *;
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+}
 
 .navbar {
+  width: 100%;
+  height: 60px;
+  background-color: $nav-background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
 
+  p {
+    font-size: 20px;
+    padding: 0 20px 0 10px;
+  }
+}
+
+header {
+  margin-top: 60px;
 }

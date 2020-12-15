@@ -4,4 +4,28 @@ body {
   padding: 0;
 }
 
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #0052ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.navbar p {
+  font-size: 20px;
+  padding: 0 20px 0 10px;
+}
+
+header {
+  margin-top: 60px;
+}
+
 /*# sourceMappingURL=style.css.map */
