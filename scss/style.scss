@@ -303,8 +303,8 @@ main {
   }
   
   .right {
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 122px;
+    padding-left: 221px;
     grid-row: 1 / span 1;
     grid-column: 3 / span 1;
     position: relative;
@@ -320,7 +320,7 @@ main {
       border-radius: 50%;
       position: absolute;
       top: 350px;
-      left: -30px;
+      left: 191px;
     }
 
     .red-circle {
@@ -330,7 +330,7 @@ main {
       border-radius: 50%;
       position: absolute;
       top: 300px;
-      left: 0;
+      left: 130;
     }
   }
 }
