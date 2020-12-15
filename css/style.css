@@ -19,33 +19,37 @@ a {
   src: url(../circe-font/CRC55.otf);
 }
 body {
+  height: 100vh;
   color: #fff;
   fill: #fff;
   background-color: #000;
+}
+body #root {
+  display: grid;
+  grid-template-rows: 190px 1fr;
+  grid-template-columns: 1fr;
 }
 
 .navbar {
   width: 100%;
   height: 60px;
   background-color: #0052ff;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
+  cursor: pointer;
   z-index: 1;
-  /*.petition-logo {
-    height: 37px;
-  }*/
+}
+@media (min-width: 561px) {
+  .navbar {
+    padding: none;
+  }
 }
 .navbar svg {
   width: 30px;
-  height: unset;
-}
-@media (min-width: 561px) {
-  .navbar svg {
-    height: 460px;
-  }
 }
 .navbar p {
   width: calc(100% - 30px);
@@ -82,6 +86,8 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
 }
 @media (min-width: 741px) and (max-width: 890px) {
   header {
@@ -136,9 +142,130 @@ header .links img {
   position: relative;
   left: 11px;
 }
+header .links p {
+  display: none;
+  cursor: pointer;
+}
+header .social {
+  padding-left: 25px;
+}
+header .social a {
+  width: 33px;
+  height: 33px;
+  border: 2px solid #fff;
+  /*      display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+  */
+  cursor: pointer;
+}
+@media (min-width: 426px) and (max-width: 740px) {
+  header .social a {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width: 426px) and (max-width: 1070px) {
+  header .social a {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (min-width: 1070px) {
+  header .social a {
+    width: 66px;
+    height: 66px;
+  }
+}
+header .built-by {
+  display: none;
+}
+@media (min-width: 891px) {
+  header .built-by {
+    display: flex;
+  }
+}
 
+main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.8fr 4.5fr 4.5fr 0.8fr;
+  grid-row: 2/span 1;
+  grid-column: 1/span 1;
+}
+main .left {
+  grid-row: 1/span 1;
+  grid-column: 2/span 1;
+  width: 690px;
+  margin-top: 80px;
+}
+main .left h1 span {
+  font-size: 70px;
+  line-height: 1.22;
+  display: block;
+}
+main .left h1 .thick {
+  font-weight: 700;
+}
+main .left h1 .thin {
+  font-weight: lighter;
+}
+main .left .text-changing-text {
+  width: 100%;
+  height: 55px;
+  margin-top: 32px;
+  padding-left: 10px;
+  border: 2px solid #0051ff;
+  display: flex;
+  align-items: center;
+}
+main .left .text-changing-text p {
+  font-weight: 400;
+}
+@media (min-width: 891px) {
+  main .left .text-changing-text {
+    width: unset;
+    min-width: 509px;
+    max-width: 600px;
+    height: 76px;
+    margin-top: 80px;
+    padding-left: 45px;
+  }
+  main .left .text-changing-text p {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.24px;
+  }
+}
+main .left .explain {
+  margin-top: 60px;
+}
+main .left .explain p {
+  color: #858585;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.25px;
+  line-height: 1.85;
+}
+main .right {
+  display: flex;
+  justify-content: flex-end;
+  grid-row: 1/span 1;
+  grid-column: 3/span 1;
+  position: relative;
+}
 main .right img {
   margin-bottom: -6px;
+}
+main .right .red-circle {
+  width: 23px;
+  height: 23px;
+  border: solid 4px #f43737;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
