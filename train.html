@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #000;
+    }
+    img {
+      width: 1480px;
+    }
+
+    div {
+      position: absolute;
+      top: -210px;
+      left: 200px;
+      z-index: -1;
+      will-change: transform;
+      animation: train 8s infinite;
+      animation-timing-function: ease-in-out;
+      transform: translate(100%,-100%);
+    }
+
+    @keyframes train {
+      40% {
+        transform: translate(1px,1px);
+      }
+
+      60% {
+        transform: translate(1px,1px);
+      }
+
+      100% {
+        transform: translate(-2600px,1000px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="train.svg" alt="">
+  </div>
+</body>
+</html>
