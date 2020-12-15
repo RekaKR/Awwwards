@@ -18,6 +18,10 @@ body {
   top: 0;
   z-index: 1;
 
+  /*.petition-logo {
+    height: 37px;
+  }*/
+  
   svg {
     width: 30px;
     height: unset;
@@ -31,7 +35,6 @@ body {
     width: calc(100% - 30px);
     padding-left: 15px;
     font-size: 15px;
-    line-height: 1.2;
 
     @media (min-width: 561px) and (max-width: 890px) {
       padding-left: 20px;
@@ -47,15 +50,30 @@ body {
     display: none;
 
     @media (min-width: 741px) {
-      margin-top: -8px;
       width: 40px;
+      margin-top: -8px;
       display: block;
     }
   }
 }
 
 header {
+  min-height: 70px;
   margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: 741px) and (max-width: 890px) {
+    min-height: 130px;
+  }
+
+  @media (min-width: 891px) {
+    min-height: 130px;
+    justify-content: flex-start;
+  }
 
   ::before {
     content: "";
@@ -87,6 +105,17 @@ header {
       height: 480px;
       top: -215px;
       left: -175px;
+    }
+  }
+
+  .links {
+    img {
+      height: 37px;
+      margin-top: 18px;
+      display: block;
+      position: relative;
+      //left: -9px;
+      left: 11px;
     }
   }
 }

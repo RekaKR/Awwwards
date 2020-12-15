@@ -5,6 +5,8 @@ body,
   margin: 0;
   padding: 0;
   font-family: circle, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
   box-sizing: border-box;
 }
 
@@ -32,6 +34,9 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
+  /*.petition-logo {
+    height: 37px;
+  }*/
 }
 .navbar svg {
   width: 30px;
@@ -46,7 +51,6 @@ body {
   width: calc(100% - 30px);
   padding-left: 15px;
   font-size: 15px;
-  line-height: 1.2;
 }
 @media (min-width: 561px) and (max-width: 890px) {
   .navbar p {
@@ -64,14 +68,31 @@ body {
 }
 @media (min-width: 741px) {
   .navbar .hand {
-    margin-top: -8px;
     width: 40px;
+    margin-top: -8px;
     display: block;
   }
 }
 
 header {
+  min-height: 70px;
   margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 741px) and (max-width: 890px) {
+  header {
+    min-height: 130px;
+  }
+}
+@media (min-width: 891px) {
+  header {
+    min-height: 130px;
+    justify-content: flex-start;
+  }
 }
 header ::before {
   content: "";
@@ -107,6 +128,13 @@ header ::before {
     top: -215px;
     left: -175px;
   }
+}
+header .links img {
+  height: 37px;
+  margin-top: 18px;
+  display: block;
+  position: relative;
+  left: 11px;
 }
 
 main .right img {
