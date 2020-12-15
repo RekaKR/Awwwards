@@ -19,8 +19,19 @@ body {
   z-index: 1;
 
   p {
-    font-size: 20px;
-    padding: 0 20px 0 10px;
+    width: calc(100% - 30px);
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 1.2;
+
+    @media (min-width: 561px) and (max-width: 890px) {
+      padding-left: 20px;
+    }
+
+    @media (min-width: 891px) {
+      padding-left: 20px;
+      font-size: 20px;
+    }
   }
 
   .hand {
