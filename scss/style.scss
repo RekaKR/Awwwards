@@ -3,6 +3,7 @@
 
 body {
   color: $text-color;
+  fill: $text-color;;
   background-color: $background-color;
 }
 
@@ -15,13 +16,65 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 1;
 
   p {
     font-size: 20px;
     padding: 0 20px 0 10px;
   }
+
+  .hand {
+    display: none;
+
+    @media (min-width: 741px) {
+      margin-top: -8px;
+      width: 40px;
+      display: block;
+    }
+  }
 }
 
 header {
   margin-top: 60px;
+
+  ::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: $extra-background-color;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+
+    @media (min-width: 740px) and (max-width: 890px) {
+      width: 320px;
+      height: 360px;
+      top: -215px;
+      left: -175px;
+    }
+
+    @media (min-width: 891px) and (max-width: 1690px) {
+      width: 360px;
+      height: 380px;
+      top: -215px;
+      left: -175px;
+    }
+
+    @media (min-width: 1691px) {
+      width: 485px;
+      height: 480px;
+      top: -215px;
+      left: -175px;
+    }
+  }
+}
+
+main {
+
+  .right {
+    img {
+      margin-bottom: -6px;
+    }
+  }
 }
