@@ -17,6 +17,7 @@ a {
 @font-face {
   font-family: "circle Extra Light";
   src: url(../circe-font/CRC25.otf);
+  font-weight: lighter;
 }
 @font-face {
   font-family: "circle Light";
@@ -253,13 +254,26 @@ main .sidebar {
 }
 main .sidebar p {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 17.5px;
   transform: rotate(-90deg);
 }
 main .sidebar .top {
-  margin: 200px 0 0 45px;
-  font-family: "circle Extra Light", sans-serif;
+  margin: 200px 0 0 41px;
   text-decoration: none;
+}
+main .sidebar .top p {
+  font-family: "circle Light", sans-serif;
+}
+main .sidebar .top .eng {
+  font-family: circle, sans-serif;
+  letter-spacing: 0.6px;
+}
+main .sidebar .top .ua {
+  margin-bottom: 28px;
+}
+main .sidebar .top .ua,
+main .sidebar .top .rus {
+  color: #858585;
 }
 main .sidebar .bottom {
   margin-top: 150px;
@@ -269,8 +283,8 @@ main .sidebar .bottom .line2,
 main .sidebar .bottom .line3 {
   width: 18px;
   height: 18px;
-  position: relative;
   box-shadow: 2px 2px #fff;
+  position: relative;
   transform: rotate(45deg);
 }
 main .left {
@@ -378,10 +392,10 @@ main .right .train {
   position: absolute;
   top: -210px;
   left: 200px;
-  z-index: -1;
   animation: train 8s infinite;
   animation-timing-function: ease-in-out;
   transform: translate(100%, -100%);
+  z-index: -1;
 }
 main .right .train img {
   width: 1480px;
