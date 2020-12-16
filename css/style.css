@@ -81,7 +81,7 @@ body #root {
 
 header {
   min-height: 70px;
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -124,8 +124,8 @@ header ::before {
   header ::before {
     width: 360px;
     height: 380px;
-    top: -210px;
-    left: -175px;
+    top: -215px;
+    left: -176px;
   }
 }
 @media (min-width: 1691px) {
@@ -244,9 +244,15 @@ main .sidebar p {
   font-size: 18px;
   transform: rotate(-90deg);
 }
-main .sidebar .line1,
-main .sidebar .line2,
-main .sidebar .line3 {
+main .sidebar .top {
+  margin-top: 150px;
+}
+main .sidebar .bottom {
+  margin-top: 150px;
+}
+main .sidebar .bottom .line1,
+main .sidebar .bottom .line2,
+main .sidebar .bottom .line3 {
   width: 18px;
   height: 18px;
   position: relative;
