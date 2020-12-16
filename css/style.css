@@ -22,11 +22,10 @@ body {
   color: #fff;
   fill: #fff;
   background-color: #000;
-  overflow-x: hidden;
 }
 body #root {
-  height: 100vh;
   display: grid;
+  overflow: hidden;
   grid-template-rows: 190px 1fr;
   grid-template-columns: 1fr;
 }

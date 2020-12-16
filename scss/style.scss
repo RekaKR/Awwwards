@@ -2,14 +2,15 @@
 @use 'variables' as *;
 
 body {
+  //width: 100vw;
+  //height: 100vh;
   color: $text-color;
   fill: $text-color;;
   background-color: $background-color;
-  overflow-x: hidden;
 
   #root {
-    height: 100vh;
     display: grid;
+    overflow: hidden;
     grid-template-rows: 190px 1fr;
     grid-template-columns: 1fr;
   }
