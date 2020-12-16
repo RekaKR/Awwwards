@@ -238,7 +238,7 @@ main .left {
   grid-row: 1/span 1;
   grid-column: 2/span 1;
   width: 690px;
-  margin-top: 200px;
+  margin: 202px 0 0 12px;
 }
 main .left .blue-circle {
   width: 23px;
@@ -264,7 +264,7 @@ main .left h1 span {
   display: block;
 }
 main .left h1 .thick {
-  font-weight: 700;
+  font-weight: 600;
 }
 main .left h1 .thin {
   font-weight: lighter;
