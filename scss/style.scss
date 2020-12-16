@@ -220,7 +220,7 @@ main {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
     width: 690px;
-    margin: 202px 0 0 12px;
+    margin: 202px 0 0 6px;
 
     .blue-circle {
       width: 23px;
@@ -304,7 +304,7 @@ main {
   
   .right {
     margin-top: 122px;
-    padding-left: 221px;
+    margin-left: 215px;
     grid-row: 1 / span 1;
     grid-column: 3 / span 1;
     position: relative;
@@ -320,7 +320,7 @@ main {
       border-radius: 50%;
       position: absolute;
       top: 350px;
-      left: 191px;
+      left: -30px;
     }
 
     .red-circle {
@@ -330,7 +330,7 @@ main {
       border-radius: 50%;
       position: absolute;
       top: 300px;
-      left: 130;
+      left: 0;
     }
   }
 }
