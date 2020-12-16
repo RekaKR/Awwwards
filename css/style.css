@@ -48,9 +48,6 @@ body #root {
   height: 60px;
   padding: 0 15px;
   background-color: #0052ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   cursor: pointer;
@@ -61,30 +58,41 @@ body #root {
     padding: none;
   }
 }
-.navbar svg {
-  width: 30px;
+.navbar .container {
+  width: 860px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.navbar p {
+.navbar .container svg {
+  width: 32px;
+}
+.navbar .container p {
   width: calc(100% - 30px);
   padding-left: 15px;
+  font-family: "circle Light";
+  font-weight: 400;
   font-size: 15px;
 }
 @media (min-width: 561px) and (max-width: 890px) {
-  .navbar p {
+  .navbar .container p {
     padding-left: 20px;
   }
 }
 @media (min-width: 891px) {
-  .navbar p {
+  .navbar .container p {
     padding-left: 20px;
     font-size: 20px;
   }
 }
-.navbar .hand {
+.navbar .container .hand {
   display: none;
 }
 @media (min-width: 741px) {
-  .navbar .hand {
+  .navbar .container .hand {
     width: 40px;
     margin-top: -8px;
     display: block;

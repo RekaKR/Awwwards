@@ -21,9 +21,6 @@ body {
   height: 60px;
   padding: 0 15px;
   background-color: $nav-background-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   cursor: pointer;
@@ -32,34 +29,46 @@ body {
   @media (min-width: 561px) {
     padding: none;
   }
+  
+  .container {
+    width: 860px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  svg {
-    width: 30px;
-  }
-
-  p {
-    width: calc(100% - 30px);
-    padding-left: 15px;
-    font-size: 15px;
-
-    @media (min-width: 561px) and (max-width: 890px) {
-      padding-left: 20px;
+    svg {
+      width: 32px;
     }
-
-    @media (min-width: 891px) {
-      padding-left: 20px;
-      font-size: 20px;
+  
+    p {
+      width: calc(100% - 30px);
+      padding-left: 15px;
+      font-family: "circle Light";
+      font-weight: 400;
+      font-size: 15px;
+  
+      @media (min-width: 561px) and (max-width: 890px) {
+        padding-left: 20px;
+      }
+  
+      @media (min-width: 891px) {
+        padding-left: 20px;
+        font-size: 20px;
+      }
     }
-  }
-
-  .hand {
-    display: none;
-
-    @media (min-width: 741px) {
-      width: 40px;
-      margin-top: -8px;
-      display: block;
-      animation: hand 3s linear infinite;
+  
+    .hand {
+      display: none;
+  
+      @media (min-width: 741px) {
+        width: 40px;
+        margin-top: -8px;
+        display: block;
+        animation: hand 3s linear infinite;
+      }
     }
   }
 }
