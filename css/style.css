@@ -229,7 +229,7 @@ header .social .container a {
 }
 header .built-by {
   color: #858585;
-  margin: 0 auto 0 260px;
+  margin: 0 auto 0 220px;
 }
 @media (min-width: 891px) {
   header .built-by {
@@ -245,7 +245,7 @@ header .built-by p {
 }
 header .built-by p span {
   color: #fff;
-  font-weight: 400;
+  font-size: 20.5px;
 }
 header .built-by img {
   width: 75px;

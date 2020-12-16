@@ -202,7 +202,7 @@ header {
 
   .built-by {
     color: $g-text-color;
-    margin: 0 auto 0 260px;
+    margin: 0 auto 0 220px;
 
     @media (min-width: 891px) {
       display: flex;
@@ -217,7 +217,7 @@ header {
             
       span {
         color: $text-color;
-        font-weight: 400;
+        font-size: 20.5px;
       }
     }
 
