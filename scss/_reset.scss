@@ -6,7 +6,7 @@ body,
 ::after {
   margin: 0;
   padding: 0;
-  font-family: $font-f;
+  font-family: circle, sans-serif;
   font-size: 16px;
   line-height: 1.2;
   box-sizing: border-box;
@@ -17,6 +17,21 @@ a {
 }
 
 @font-face {
+  font-family: "circle Extra Light";
+  src: url(../circe-font/CRC25.otf);
+}
+
+@font-face {
+  font-family: "circle Light";
+  src: url(../circe-font/CRC35.otf);
+}
+
+@font-face {
   font-family: circle;
   src: url(../circe-font/CRC55.otf);
+}
+
+@font-face {
+  font-family: "circle Bold";
+  src: url(../circe-font/CRC65.otf);
 }

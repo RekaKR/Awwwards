@@ -15,8 +15,20 @@ a {
 }
 
 @font-face {
+  font-family: "circle Extra Light";
+  src: url(../circe-font/CRC25.otf);
+}
+@font-face {
+  font-family: "circle Light";
+  src: url(../circe-font/CRC35.otf);
+}
+@font-face {
   font-family: circle;
   src: url(../circe-font/CRC55.otf);
+}
+@font-face {
+  font-family: "circle Bold";
+  src: url(../circe-font/CRC65.otf);
 }
 body {
   color: #fff;
@@ -240,12 +252,14 @@ main .sidebar {
   grid-column: 1/span 1;
 }
 main .sidebar p {
-  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 18px;
   transform: rotate(-90deg);
 }
 main .sidebar .top {
-  margin-top: 150px;
+  margin: 200px 0 0 45px;
+  font-family: "circle Extra Light", sans-serif;
+  text-decoration: none;
 }
 main .sidebar .bottom {
   margin-top: 150px;
@@ -289,9 +303,10 @@ main .left h1 span {
   display: block;
 }
 main .left h1 .thick {
-  font-weight: 600;
+  font-family: "circle Bold", sans-serif;
 }
 main .left h1 .thin {
+  font-family: circle, sans-serif;
   font-weight: lighter;
 }
 main .left .text-changing-text {

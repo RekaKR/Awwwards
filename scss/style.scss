@@ -224,13 +224,15 @@ main {
     grid-column: 1 / span 1;
 
     p {
-      margin-top: 30px;
+      margin-bottom: 20px;
       font-size: 18px;
       transform: rotate(-90deg);
     }
     
     .top {
-      margin-top: 150px;
+      margin: 200px 0 0 45px;
+      font-family: "circle Extra Light", sans-serif;
+      text-decoration: none;
     }
 
     .bottom {
@@ -282,10 +284,11 @@ main {
       }
 
       .thick {
-        font-weight: 600;
+        font-family: "circle Bold", sans-serif;
       }
 
       .thin {
+        font-family: circle, sans-serif;
         font-weight: lighter;
       }
     }
