@@ -46,7 +46,8 @@ body {
     p {
       width: calc(100% - 30px);
       padding-left: 15px;
-      font-family: "circle Light";
+      font-family: "circle Light", sans-serif;
+      ;
       font-weight: 400;
       font-size: 15px;
   
@@ -164,35 +165,44 @@ header {
   }    
 
   .social {
-    padding-left: 25px;
+    padding-left: 47px;
     
-    a {
-      width: 33px;
-      height: 33px;
-      border: 2px solid $text-color;
-      //border-style: solid solid solid none;
-      cursor: pointer;
-
-      @media (min-width: 426px) and (max-width: 740px) {
-        width: 45px;
-        height: 45px;
-      }
-
-      @media (min-width: 426px) and (max-width: 1070px) {
-        width: 55px;
-        height: 55px;
-      }
-
-      @media (min-width: 1070px) {
-        width: 66px;
-        height: 66px;
+    .container {
+      display: flex;
+      
+      a {
+        width: 33px;
+        height: 33px;
+        margin-right: -2px;
+        border: 2px solid $text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //border-style: solid solid solid none;
+        cursor: pointer;
+  
+        @media (min-width: 426px) and (max-width: 740px) {
+          width: 45px;
+          height: 45px;
+        }
+  
+        @media (min-width: 426px) and (max-width: 1070px) {
+          width: 55px;
+          height: 55px;
+        }
+  
+        @media (min-width: 1070px) {
+          width: 70px;
+          height: 70px;
+        }
       }
     }
+   
   }
 
   .built-by {
     color: $g-text-color;
-    display: none;
+    margin: 0 auto 0 260px;
 
     @media (min-width: 891px) {
       display: flex;
@@ -200,13 +210,14 @@ header {
     }
 
     p {
+      font-family: circle, sans-serif;
       font-weight: 300;
       font-size: 20px;
       letter-spacing: -.2px;
             
       span {
         color: $text-color;
-        display: inline-block;
+        font-weight: 400;
       }
     }
 
@@ -243,7 +254,6 @@ main {
       }
 
       .eng {
-        font-family: "circle Extra Light", sans-serif;
         font-family: circle, sans-serif;
         font-weight: 400;
         letter-spacing: 0.6px;

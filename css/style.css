@@ -73,7 +73,7 @@ body #root {
 .navbar .container p {
   width: calc(100% - 30px);
   padding-left: 15px;
-  font-family: "circle Light";
+  font-family: "circle Light", sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
@@ -194,35 +194,42 @@ header .links p {
   }
 }
 header .social {
-  padding-left: 25px;
+  padding-left: 47px;
 }
-header .social a {
+header .social .container {
+  display: flex;
+}
+header .social .container a {
   width: 33px;
   height: 33px;
+  margin-right: -2px;
   border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 @media (min-width: 426px) and (max-width: 740px) {
-  header .social a {
+  header .social .container a {
     width: 45px;
     height: 45px;
   }
 }
 @media (min-width: 426px) and (max-width: 1070px) {
-  header .social a {
+  header .social .container a {
     width: 55px;
     height: 55px;
   }
 }
 @media (min-width: 1070px) {
-  header .social a {
-    width: 66px;
-    height: 66px;
+  header .social .container a {
+    width: 70px;
+    height: 70px;
   }
 }
 header .built-by {
   color: #858585;
-  display: none;
+  margin: 0 auto 0 260px;
 }
 @media (min-width: 891px) {
   header .built-by {
@@ -231,13 +238,14 @@ header .built-by {
   }
 }
 header .built-by p {
+  font-family: circle, sans-serif;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: -0.2px;
 }
 header .built-by p span {
   color: #fff;
-  display: inline-block;
+  font-weight: 400;
 }
 header .built-by img {
   width: 75px;
@@ -268,7 +276,6 @@ main .sidebar .top p {
   font-family: "circle Light", sans-serif;
 }
 main .sidebar .top .eng {
-  font-family: "circle Extra Light", sans-serif;
   font-family: circle, sans-serif;
   font-weight: 400;
   letter-spacing: 0.6px;
