@@ -168,7 +168,6 @@ header .links {
   width: 800px;
   height: 130px;
   padding-left: 111.5px;
-  font-weight: 400;
   letter-spacing: -0.2px;
   list-style-type: none;
   display: flex;
@@ -177,6 +176,7 @@ header .links {
 header .links p {
   padding-right: 45px;
   font-size: 20px;
+  font-weight: 400;
   display: none;
   cursor: pointer;
 }
@@ -192,11 +192,6 @@ header .social a {
   width: 33px;
   height: 33px;
   border: 2px solid #fff;
-  /*    display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-  */
   cursor: pointer;
 }
 @media (min-width: 426px) and (max-width: 740px) {
@@ -228,8 +223,8 @@ header .built-by {
   }
 }
 header .built-by p {
-  font-size: 20px;
   font-weight: 300;
+  font-size: 20px;
   letter-spacing: -0.2px;
 }
 header .built-by p span {
@@ -253,39 +248,66 @@ main .sidebar {
   grid-column: 1/span 1;
 }
 main .sidebar p {
-  margin-bottom: 20px;
-  font-size: 17.5px;
+  margin-bottom: 19px;
+  font-size: 18px;
   transform: rotate(-90deg);
 }
 main .sidebar .top {
-  margin: 200px 0 0 41px;
+  margin: 198px 0 0 40px;
   text-decoration: none;
 }
 main .sidebar .top p {
   font-family: "circle Light", sans-serif;
 }
 main .sidebar .top .eng {
+  font-family: "circle Extra Light", sans-serif;
   font-family: circle, sans-serif;
+  font-weight: 400;
   letter-spacing: 0.6px;
 }
 main .sidebar .top .ua {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
+  letter-spacing: 0.8px;
 }
 main .sidebar .top .ua,
 main .sidebar .top .rus {
   color: #858585;
 }
 main .sidebar .bottom {
-  margin-top: 150px;
+  margin: 310px 0 0 40px;
 }
-main .sidebar .bottom .line1,
-main .sidebar .bottom .line2,
-main .sidebar .bottom .line3 {
+main .sidebar .bottom .container {
+  margin: 60px 0 0 25px;
+}
+main .sidebar .bottom .container .line1,
+main .sidebar .bottom .container .line2,
+main .sidebar .bottom .container .line3 {
   width: 18px;
   height: 18px;
+  margin-bottom: 15px;
   box-shadow: 2px 2px #fff;
+  opacity: 1;
   position: relative;
   transform: rotate(45deg);
+  animation: blinker 1s steps(5, start) infinite;
+}
+main .sidebar .bottom .container .line1 {
+  animation-delay: 0s;
+}
+main .sidebar .bottom .container .line2 {
+  animation-delay: 0.3s;
+}
+main .sidebar .bottom .container .line3 {
+  animation-delay: 0.6s;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.1;
+  }
+}
+main .sidebar .bottom:hover .line1, main .sidebar .bottom:hover .line2, main .sidebar .bottom:hover .line3 {
+  box-shadow: 2px 2px #fff;
+  animation: none;
 }
 main .left {
   grid-row: 1/span 1;
@@ -352,6 +374,7 @@ main .left .text-changing-text p {
 }
 main .left .explain {
   margin-top: 60px;
+  max-width: 94%;
 }
 main .left .explain p {
   color: #858585;
