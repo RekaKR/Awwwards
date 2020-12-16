@@ -81,7 +81,7 @@ body #root {
 
 header {
   min-height: 70px;
-  margin-top: 60px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -124,7 +124,7 @@ header ::before {
   header ::before {
     width: 360px;
     height: 380px;
-    top: -215px;
+    top: -210px;
     left: -175px;
   }
 }
@@ -234,6 +234,24 @@ main {
   grid-template-columns: 0.758fr 4.542fr 4.5fr 0.8fr;
   grid-row: 2/span 1;
   grid-column: 1/span 1;
+}
+main .sidebar {
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
+}
+main .sidebar p {
+  margin-top: 30px;
+  font-size: 18px;
+  transform: rotate(-90deg);
+}
+main .sidebar .line1,
+main .sidebar .line2,
+main .sidebar .line3 {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  box-shadow: 2px 2px #fff;
+  transform: rotate(45deg);
 }
 main .left {
   grid-row: 1/span 1;
