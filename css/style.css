@@ -22,6 +22,7 @@ body {
   color: #fff;
   fill: #fff;
   background-color: #000;
+  overflow-x: hidden;
 }
 body #root {
   height: 100vh;
@@ -75,6 +76,7 @@ body #root {
     width: 40px;
     margin-top: -8px;
     display: block;
+    animation: hand 3s linear infinite;
   }
 }
 
@@ -313,7 +315,7 @@ main .right {
   grid-column: 3/span 1;
   position: relative;
 }
-main .right img {
+main .right img.hero {
   margin-bottom: -6px;
 }
 main .right .blue-circle {
@@ -333,6 +335,41 @@ main .right .red-circle {
   position: absolute;
   top: 300px;
   left: 0;
+}
+main .right .train {
+  position: absolute;
+  top: -210px;
+  left: 200px;
+  z-index: -1;
+  animation: train 8s infinite;
+  animation-timing-function: ease-in-out;
+  transform: translate(100%, -100%);
+}
+main .right .train img {
+  width: 1480px;
+}
+
+@keyframes train {
+  40% {
+    transform: translate(-290px, 145px);
+  }
+  60% {
+    transform: translate(-290px, 145px);
+  }
+  100% {
+    transform: translate(-2600px, 1000px);
+  }
+}
+@keyframes hand {
+  0% {
+    transform: translateX(8px) translateX(1px);
+  }
+  50% {
+    transform: translateX(1px) translateX(8px) translateX(9px);
+  }
+  100% {
+    transform: translateX(8px) translateX(1px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
