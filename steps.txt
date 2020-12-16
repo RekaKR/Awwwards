@@ -1,11 +1,11 @@
 Kiválasztjuk a templat-et, amit meg akarunk csinálni.   -   DONE
 Felosztjuk a fő feladatokat (loading page, a HTML+CSS). -   DONE
 Elkészítjük a HTML + CSS alapjait.                      -   Réka
-  Kiválasztjuk a technikát.
-  Felépítjük a html-t föntről lefelé.
-    A képeket és a file-okat importáljuk.
-  Megnézni és beszerezni a betűtípust.
-  Létrehozzuk a _reset, a _variables és a style.scss-t.
+  Kiválasztjuk a technikát.                             -   DONE
+  Felépítjük a html-t föntről lefelé.                   -   I/P
+    A képeket és a file-okat importáljuk.               -   I/P
+  Megnézni és beszerezni a betűtípust.                  -   DONE
+  Létrehozzuk a _reset, a _variables és a style.scss-t. -   DONE
   Hozzáadjuk az SCSS-t a HTML-hez.                      -   DONE
   Átnézzük a HTML-t és az SCSS file-t, hogy mit lehet
   megoldani benne JS nélkül.
