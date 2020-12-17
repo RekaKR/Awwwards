@@ -56,7 +56,7 @@ function pageLoad () {
 
     let css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.09em solid #fff }";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 2px solid #fff }";
     document.body.appendChild(css);
   }
   
