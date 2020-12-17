@@ -195,6 +195,12 @@ header .links {
   list-style-type: none;
   display: flex;
   align-items: center;
+  /* 
+  @keyframes strike {
+    50% {width: 0%;}
+    100% {width: 100%;}
+  }
+  */
 }
 header .links p {
   margin-right: 45px;
@@ -220,8 +226,7 @@ header .links p:nth-child(4):hover::after {
   position: absolute;
   top: 50%;
   left: 0;
-  animation-name: strike 4s linear;
-  animation-iteration-count: 1;
+  transition: width 0.35s ease-in-out;
 }
 header .social {
   padding-left: 47px;

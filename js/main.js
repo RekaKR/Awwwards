@@ -75,8 +75,24 @@ function pageLoad () {
     document.getElementById('preloader').remove();
     root.innerHTML = content;
     rotate();
+    change();
   }, 3000);
+
+  function change () {
+    let solarLogo = document.getElementById("solar-logo");
+    let changeText = document.getElementById("change-text");
   
+    function lineIn () {
+      changeText.style.color = 'red';
+    }
+
+    function lineOut () {
+      changeText.style.color = 'white';
+    }
+
+    solarLogo.addEventListener('mouseover', lineIn);
+    solarLogo.addEventListener('mouseout', lineOut);
+  }  
 }
 
 window.addEventListener('load', pageLoad);
