@@ -60,7 +60,6 @@ function pageLoad () {
     document.body.appendChild(css);
   }
 
-  /*
   const root = document.getElementById('root');
 
   const content = root.innerHTML;
@@ -78,18 +77,22 @@ function pageLoad () {
     rotate();
   }, 3000);
   
-}
+
 
   let solarLogo = document.getElementById("solar-logo");
   let changeText = document.getElementById("change-text");
 
-  function change() {
+  function change () {
     changeText.style.color = 'red';
+    console.log('ok');
   }
 
-  solarLogo.addEventListener('mouseover', change());
-  
+  solarLogo.addEventListener('mouseover', change);
+}
 
+
+  
+/*
 &:hover::after {
   content: ' ';
   width: 100%;
@@ -101,7 +104,6 @@ function pageLoad () {
   animation-name: strike 4s linear;
   animation-iteration-count: 1;
 */
-}
 
 
 window.addEventListener('load', pageLoad);
