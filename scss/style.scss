@@ -259,6 +259,15 @@ header {
     img {
       width: 75px;
       padding-left: 20px;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: .3s ease-in-out;
+      }
+    }
+
+    img:hover + p span {
+      color: red;
     }
   }
 }
