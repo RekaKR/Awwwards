@@ -290,10 +290,6 @@ header .built-by img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
-header .built-by img:hover + span {
-  color: red;
-  background-color: white;
-}
 
 main {
   display: grid;

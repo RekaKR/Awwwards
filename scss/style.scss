@@ -270,11 +270,6 @@ header {
         transform: scale(1.05);
         transition: transform .3s ease-in-out;
       }
-        
-      &:hover + span {
-        color: red;
-        background-color: white;
-      }
     }
   }
 }
