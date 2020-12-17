@@ -41,6 +41,21 @@ body #root {
   overflow: hidden;
   grid-template-rows: 190px 1fr;
   grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+body #preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/preloader-background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+body #preloader img {
+  width: 140px;
+  animation: 1.6s loading infinite;
 }
 
 .navbar {
@@ -439,6 +454,14 @@ main .right .train img {
   width: 1480px;
 }
 
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes train {
   40% {
     transform: translate(-290px, 145px);
