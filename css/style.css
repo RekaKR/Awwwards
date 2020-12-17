@@ -37,21 +37,21 @@ body {
   background-color: #000;
 }
 body #root {
+  min-height: 100vh;
   display: grid;
-  overflow: hidden;
   grid-template-rows: 190px 1fr;
   grid-template-columns: 1fr;
-  min-height: 100vh;
+  overflow: hidden;
 }
 body #preloader {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/preloader-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/preloader-background.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
 }
 body #preloader img {
   width: 140px;
@@ -243,6 +243,7 @@ header .social .container a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   cursor: pointer;
 }
 @media (min-width: 426px) and (max-width: 740px) {
@@ -262,6 +263,24 @@ header .social .container a {
     width: 70px;
     height: 70px;
   }
+}
+header .social .container a:nth-child(1)::before, header .social .container a:nth-child(2)::before, header .social .container a:nth-child(3)::before {
+  content: " ";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  transition: width 0.35s ease-in-out;
+}
+header .social .container a:nth-child(1):hover::before, header .social .container a:nth-child(2):hover::before, header .social .container a:nth-child(3):hover::before {
+  width: 100%;
+  height: 100%;
+  fill: #000;
+  background-color: #fff;
+}
+header .social .container a:hover svg {
+  fill: #000;
+  z-index: 2;
 }
 header .built-by {
   color: #858585;
@@ -286,6 +305,7 @@ header .built-by span:nth-child(1) {
 header .built-by span:nth-child(2) {
   color: #fff;
   font-size: 20px;
+  position: relative;
 }
 header .built-by img {
   display: inline-block;
@@ -314,16 +334,18 @@ main .sidebar p {
   transform: rotate(-90deg);
   cursor: pointer;
 }
-main .sidebar p:nth-child(1):hover::after, main .sidebar p:nth-child(2):hover::after, main .sidebar p:nth-child(3):hover::after {
+main .sidebar p:nth-child(1)::after, main .sidebar p:nth-child(2)::after, main .sidebar p:nth-child(3)::after {
   content: " ";
-  width: 100%;
+  width: 0;
   height: 2px;
   background: #fff;
   position: absolute;
   top: 50%;
   left: 0;
-  animation-name: strike 4s linear;
-  animation-iteration-count: 1;
+  transition: width 0.35s ease-in-out;
+}
+main .sidebar p:nth-child(1):hover::after, main .sidebar p:nth-child(2):hover::after, main .sidebar p:nth-child(3):hover::after {
+  width: 80%;
 }
 main .sidebar .top {
   margin: 198px 0 0 40px;
@@ -493,6 +515,20 @@ main .right .train {
 }
 main .right .train img {
   width: 1480px;
+}
+
+.toggle::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: width 0.35s ease-in-out;
+}
+.toggle:hover::after {
+  width: 100%;
 }
 
 @keyframes loading {

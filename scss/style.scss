@@ -2,29 +2,27 @@
 @use 'variables' as *;
 
 body {
-  //width: 100vw;
-  //height: 100vh;
   color: $text-color;
   fill: $text-color;;
   background-color: $background-color;
 
   #root {
+    min-height: 100vh;
     display: grid;
-    overflow: hidden;
     grid-template-rows: 190px 1fr;
     grid-template-columns: 1fr;
-    min-height: 100vh;
+    overflow: hidden;
   }
 
   #preloader {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/preloader-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/preloader-background.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
 
     img {
       width: 140px;
@@ -217,6 +215,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         //border-style: solid solid solid none;
         cursor: pointer;
   
@@ -233,6 +232,32 @@ header {
         @media (min-width: 1070px) {
           width: 70px;
           height: 70px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          &::before {
+            content: ' ';
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 0;
+            transition: width 0.35s ease-in-out;
+          }
+    
+          &:hover::before {
+            width: 100%;
+            height: 100%;
+            fill: $background-color;
+            background-color: $text-color;
+          }
+        }
+
+        
+        &:hover svg {
+          fill: #000;
+          z-index: 2;
         }
       }
     }
@@ -262,6 +287,7 @@ header {
       &:nth-child(2) {
         color: $text-color;
         font-size: 20px;
+        position: relative;
       }
     }
 
@@ -290,6 +316,7 @@ main {
     grid-column: 1 / span 1;
 
     p {
+  //    margin-bottom: 19px;
       margin-bottom: 19px;
       font-size: 18px;
       transform: rotate(-90deg);
@@ -298,16 +325,19 @@ main {
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3) {
-        &:hover::after {
+        &::after {
           content: ' ';
-          width: 100%;
+          width: 0;
           height: 2px;
           background: $text-color;
           position: absolute;
           top: 50%;
           left: 0;
-          animation-name: strike 4s linear;
-          animation-iteration-count: 1;
+          transition: width 0.35s ease-in-out;
+        }
+  
+        &:hover::after {
+          width: 80%;
         }
       }
     }
@@ -518,6 +548,26 @@ main {
     }
   }
 }
+
+
+
+.toggle {
+  &::after {
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background: $text-color;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: width 0.35s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
 
 @keyframes loading {
   0% {

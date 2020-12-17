@@ -83,15 +83,15 @@ function pageLoad () {
     let changeText = document.getElementById("change-text");
   
     function lineIn () {
-      changeText.style.color = 'red';
+      changeText.classList.add('toggle');
     }
-
+/*
     function lineOut () {
-      changeText.style.color = 'white';
+      changeText.classList.remove('toggle');
     }
-
+*/
     solarLogo.addEventListener('mouseover', lineIn);
-    solarLogo.addEventListener('mouseout', lineOut);
+    //solarLogo.addEventListener('mouseout', lineOut);
   }  
 }
 
