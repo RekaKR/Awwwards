@@ -53,6 +53,11 @@ function pageLoad () {
             new TxtRotate(elements[i], JSON.parse(toRotate), period);
         }
     }
+
+    let css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
   }
   
   const root = document.getElementById('root');
