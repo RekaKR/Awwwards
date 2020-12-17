@@ -60,6 +60,22 @@ function pageLoad () {
     document.body.appendChild(css);
   }
   
+  function change () {
+    const solarLogo = document.getElementById("solar-logo");
+    const changeText = document.getElementById("change-text");
+  
+    function lineIn () {
+      changeText.classList.add('toggle');
+    }
+
+    function lineOut () {
+      changeText.classList.remove('toggle');
+    }
+
+    solarLogo.addEventListener('mouseover', lineIn);
+    solarLogo.addEventListener('mouseout', lineOut);
+  }  
+
   const root = document.getElementById('root');
 
   const content = root.innerHTML;
@@ -77,22 +93,6 @@ function pageLoad () {
     rotate();
     change();
   }, 3000);
-
-  function change () {
-    const solarLogo = document.getElementById("solar-logo");
-    const changeText = document.getElementById("change-text");
-  
-    function lineIn () {
-      changeText.classList.add('toggle');
-    }
-
-    function lineOut () {
-      changeText.classList.remove('toggle');
-    }
-
-    solarLogo.addEventListener('mouseover', lineIn);
-    solarLogo.addEventListener('mouseout', lineOut);
-  }  
 }
 
 window.addEventListener('load', pageLoad);
