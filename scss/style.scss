@@ -237,22 +237,27 @@ header {
 
   .built-by {
     color: $g-text-color;
-    margin: 0 auto 0 220px;
+    margin: 0 auto 0 223px;
 
     @media (min-width: 891px) {
       display: flex;
       align-items: center;
     }
 
-    p {
+    span {
+      margin-top: 2px;
       font-family: circle, sans-serif;
       font-weight: 300;
       font-size: 20px;
       letter-spacing: -.2px;
-            
-      span {
+
+      &:nth-child(1) {
+        margin-right: 4.5px;
+      }
+  
+      &:nth-child(2) {
         color: $text-color;
-        font-size: 20.5px;
+        font-size: 20px;
       }
     }
 
@@ -263,12 +268,13 @@ header {
 
       &:hover {
         transform: scale(1.05);
-        transition: transform .3s ease-in-out,
+        transition: transform .3s ease-in-out;
       }
-    }
-
-    img:hover ~ p span {
-      color: red;
+        
+      &:hover + span {
+        color: red;
+        background-color: white;
+      }
     }
   }
 }

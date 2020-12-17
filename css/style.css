@@ -259,7 +259,7 @@ header .social .container a {
 }
 header .built-by {
   color: #858585;
-  margin: 0 auto 0 220px;
+  margin: 0 auto 0 223px;
 }
 @media (min-width: 891px) {
   header .built-by {
@@ -267,15 +267,19 @@ header .built-by {
     align-items: center;
   }
 }
-header .built-by p {
+header .built-by span {
+  margin-top: 2px;
   font-family: circle, sans-serif;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: -0.2px;
 }
-header .built-by p span {
+header .built-by span:nth-child(1) {
+  margin-right: 4.5px;
+}
+header .built-by span:nth-child(2) {
   color: #fff;
-  font-size: 20.5px;
+  font-size: 20px;
 }
 header .built-by img {
   display: inline-block;
@@ -286,8 +290,9 @@ header .built-by img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
-header .built-by img:hover ~ p span {
+header .built-by img:hover + span {
   color: red;
+  background-color: white;
 }
 
 main {
