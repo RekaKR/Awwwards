@@ -40,6 +40,7 @@ TxtRotate.prototype.tick = function () {
 };
 
 window.onload = function () {
+  console.log("Im running");
   let elements = document.getElementsByClassName('txt-rotate');
   console.log(elements);
   console.log(elements.length);
@@ -57,3 +58,5 @@ window.onload = function () {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css); */
 };
+
+console.log("Im running");
