@@ -433,7 +433,7 @@ main {
       display: flex;
       align-items: center;
 
-      p {
+      p, span {
         font-weight: 400;
       }
 
@@ -445,7 +445,7 @@ main {
         margin-top: 80px;
         padding-left: 45px;
 
-        p {
+        p, span {
           font-size: 24px;
           font-weight: 300;
           letter-spacing: -.24px;

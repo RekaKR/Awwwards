@@ -418,7 +418,7 @@ main .left .text-changing-text {
   display: flex;
   align-items: center;
 }
-main .left .text-changing-text p {
+main .left .text-changing-text p, main .left .text-changing-text span {
   font-weight: 400;
 }
 @media (min-width: 891px) {
@@ -430,7 +430,7 @@ main .left .text-changing-text p {
     margin-top: 80px;
     padding-left: 45px;
   }
-  main .left .text-changing-text p {
+  main .left .text-changing-text p, main .left .text-changing-text span {
     font-size: 24px;
     font-weight: 300;
     letter-spacing: -0.24px;
