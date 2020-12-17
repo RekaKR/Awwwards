@@ -443,11 +443,11 @@ main .right .red-circle {
 }
 main .right .train {
   position: absolute;
-  top: -210px;
-  left: 200px;
+  top: 0;
+  left: 0;
   animation: train 8s infinite;
   animation-timing-function: ease-in-out;
-  transform: translate(100%, -100%);
+  transform: translate(1497px, -744px);
   z-index: -1;
 }
 main .right .train img {
@@ -464,24 +464,24 @@ main .right .train img {
 }
 @keyframes train {
   40% {
-    transform: translate(-290px, 145px);
+    transform: translate(-99px, -99px);
   }
   60% {
-    transform: translate(-290px, 145px);
+    transform: translate(-99px, -99px);
   }
   100% {
-    transform: translate(-2600px, 1000px);
+    transform: translate(-2599px, 911px);
   }
 }
 @keyframes hand {
   0% {
-    transform: translateX(8px) translateX(1px);
+    transform: translateX(1px);
   }
   50% {
-    transform: translateX(1px) translateX(8px) translateX(9px);
+    transform: translateX(9px);
   }
   100% {
-    transform: translateX(8px) translateX(1px);
+    transform: translateX(1px);
   }
 }
 
