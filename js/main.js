@@ -1,5 +1,6 @@
 function pageLoad () {
   const root = document.getElementById('root');
+
   const content = root.innerHTML;
   root.innerHTML = '';
 
@@ -8,7 +9,9 @@ function pageLoad () {
       <img src="../img/preloader.png" alt="">
     </div>
   `);
+
   setTimeout(() => {
+    document.getElementById('preloader').remove();
     root.innerHTML = content;
   }, 3000);
 }
