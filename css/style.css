@@ -278,14 +278,15 @@ header .built-by p span {
   font-size: 20.5px;
 }
 header .built-by img {
+  display: inline-block;
   width: 75px;
   padding-left: 20px;
 }
 header .built-by img:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
-header .built-by img:hover + p span {
+header .built-by img:hover ~ p span {
   color: red;
 }
 

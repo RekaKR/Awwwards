@@ -257,16 +257,17 @@ header {
     }
 
     img {
+      display: inline-block;
       width: 75px;
       padding-left: 20px;
 
       &:hover {
-        transform: scale(1.1);
-        transition: .3s ease-in-out;
+        transform: scale(1.05);
+        transition: transform .3s ease-in-out,
       }
     }
 
-    img:hover + p span {
+    img:hover ~ p span {
       color: red;
     }
   }
