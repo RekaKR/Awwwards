@@ -79,19 +79,19 @@ function pageLoad () {
   }, 3000);
 
   function change () {
-    let solarLogo = document.getElementById("solar-logo");
-    let changeText = document.getElementById("change-text");
+    const solarLogo = document.getElementById("solar-logo");
+    const changeText = document.getElementById("change-text");
   
     function lineIn () {
       changeText.classList.add('toggle');
     }
-/*
+
     function lineOut () {
       changeText.classList.remove('toggle');
     }
-*/
+
     solarLogo.addEventListener('mouseover', lineIn);
-    //solarLogo.addEventListener('mouseout', lineOut);
+    solarLogo.addEventListener('mouseout', lineOut);
   }  
 }
 

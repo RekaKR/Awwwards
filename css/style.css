@@ -517,18 +517,17 @@ main .right .train img {
   width: 1480px;
 }
 
-.toggle::after {
+.toggle {
+  left: 0;
+}
+.toggle::before {
   content: " ";
   width: 100%;
   height: 2px;
   background: #fff;
   position: absolute;
   top: 50%;
-  left: 0;
   transition: width 0.35s ease-in-out;
-}
-.toggle:hover::after {
-  width: 100%;
 }
 
 @keyframes loading {
