@@ -137,7 +137,7 @@ header {
     justify-content: flex-start;
   }
 }
-header ::before {
+header::before {
   content: "";
   width: 200px;
   height: 200px;
@@ -149,7 +149,7 @@ header ::before {
   z-index: -1;
 }
 @media (min-width: 740px) and (max-width: 890px) {
-  header ::before {
+  header::before {
     width: 320px;
     height: 360px;
     top: -215px;
@@ -157,7 +157,7 @@ header ::before {
   }
 }
 @media (min-width: 891px) and (max-width: 1690px) {
-  header ::before {
+  header::before {
     width: 360px;
     height: 380px;
     top: -215px;
@@ -165,7 +165,7 @@ header ::before {
   }
 }
 @media (min-width: 1691px) {
-  header ::before {
+  header::before {
     width: 485px;
     height: 480px;
     top: -215px;
@@ -197,16 +197,36 @@ header .links {
   align-items: center;
 }
 header .links p {
-  padding-right: 45px;
+  margin-right: 45px;
   font-size: 20px;
   font-weight: 400;
   display: none;
+  position: relative;
   cursor: pointer;
 }
 @media (min-width: 891px) {
   header .links p {
     display: block;
   }
+}
+@keyframes strike {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+header .links:hover p::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  animation-name: strike 4s linear;
+  animation-iteration-count: 1;
 }
 header .social {
   padding-left: 47px;
