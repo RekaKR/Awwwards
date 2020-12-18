@@ -13,5 +13,5 @@ Elkészítjük a loadgin page-et (szimultán).              -   DONE
 Felosztjuk a főoldalon található feladatokat            -   DONE
   Metro animáció                                        -   DONE
   Kéz animáció                                          -   DONE
-Reszponzitást ellenőrzünk.                              -   nope
-Opcionális: Javítjuk a reszponzitást.                   -   nope
+Reszponzitást ellenőrzünk.                              -   
+Opcionális: Javítjuk a reszponzitást.                   -   
