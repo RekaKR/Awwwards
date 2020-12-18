@@ -2,20 +2,16 @@ Kiválasztjuk a templat-et, amit meg akarunk csinálni.   -   DONE
 Felosztjuk a fő feladatokat (loading page, a HTML+CSS). -   DONE
 Elkészítjük a HTML + CSS alapjait.                      -   Réka
   Kiválasztjuk a technikát.                             -   DONE
-  Felépítjük a html-t föntről lefelé.                   -   I/P
-    A képeket és a file-okat importáljuk.               -   I/P
+  Felépítjük a html-t föntről lefelé.                   -   DONE
+    A képeket és a file-okat importáljuk.               -   DONE
   Megnézni és beszerezni a betűtípust.                  -   DONE
   Létrehozzuk a _reset, a _variables és a style.scss-t. -   DONE
   Hozzáadjuk az SCSS-t a HTML-hez.                      -   DONE
   Átnézzük a HTML-t és az SCSS file-t, hogy mit lehet
-  megoldani benne JS nélkül.
-Elkészítjük a loadgin page-et (szimultán).              -   Csaba
-  <--CSABA TUDJA SZOSZI-->
-Felosztjuk a főoldalon található feladatokat            -   Attila + Réka
-  <--EZ AKKOR LESZ SZÜKSÉGES, HA KÉSZ VAN A HTML ÉS A CSS-->
+  megoldani benne JS nélkül.                            -   DONE
+Elkészítjük a loadgin page-et (szimultán).              -   DONE
+Felosztjuk a főoldalon található feladatokat            -   DONE
   Metro animáció                                        -   DONE
-  Kéz animáció                                          -   Attila
-Reszponzitást ellenőrzünk.                              -   Attila + Réka
-Opcionális: Javítjuk a reszponzitást.                   -   Attila (+ Réka)
-
-(Prezentációt készítünk.)                               -   Réka (+ Attila + Csaba)
+  Kéz animáció                                          -   DONE
+Reszponzitást ellenőrzünk.                              -   nope
+Opcionális: Javítjuk a reszponzitást.                   -   nope
